@@ -13,7 +13,8 @@
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build",
+    "push": "git add . && git commit -m \"update\" && git push origin master"
   },
   "devDependencies": {
     "@types/jest": "^24.0.15",
